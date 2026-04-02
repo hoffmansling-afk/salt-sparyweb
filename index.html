@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salt &amp; Spray — Professional painting services in Orange County, CA." />
+  <title>Salt &amp; Spray</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Frozen last frame — permanently fixed behind everything -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Header -->
+  <header id="site-header">
+    <img id="header-logo" src="images/Gemini_Generated_Image_ievrn9ievrn9ievr-removebg-preview (1).png" alt="Salt &amp; Spray logo" />
+    <h1>Salt &amp; Spray</h1>
+  </header>
+
+  <!-- Loader -->
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Loading&hellip; <span id="loader-pct">0%</span></p>
+    </div>
+  </div>
+
+  <!-- Scroll-driven flipbook -->
+  <main>
+    <section id="flipbook-section">
+      <div id="sticky-frame">
+        <canvas id="flipbook-canvas"></canvas>
+        <div id="aurora" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Content section revealed after animation -->
+  <section id="content-section">
+    <div class="content-inner">
+      <p class="content-eyebrow">Orange County, CA</p>
+      <h2 class="content-heading">Crafted with care,<br>finished to last.</h2>
+      <p class="content-body">Professional painting services for residential and commercial properties. Interior, exterior, cabinet refinishing, and more.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
